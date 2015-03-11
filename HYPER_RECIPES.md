@@ -4,14 +4,14 @@ Thanks for your interest in working at Hyper. We are a bunch of passionate devel
 
 Even though you could try and convince us to hire you for your good humor, charm, or cool name, we really care about majestic code. If you have any cool projects in GitHub that you can show us, please send them to us, especially if it's one that you use on a daily basis. But if that's not the case, don't sweat it, we have this cool assignment called Hyper Recipes that you'll probably finish in a few hours.
 
-In Hyper Recipes, you'll build an application that will display recipes in either a list or a grid. Other endpoints are available if you are feeling adventurous. You decide the level of complexity, functionality and the look and feel of the application. We appreciate good looking apps and thoughtful user experiences, Google Play Store is a great source of inspiration.
+In Hyper Recipes, you'll build an application that will present a collection of recipes fetched from our [custom backend endpoint](http://hyper-recipes.herokuapp.com/recipes). Other endpoints are available if you are feeling adventurous. You decide the level of complexity, functionality and the look and feel of the application. We appreciate good looking apps and thoughtful user experiences, Google Play Store is a great source of inspiration.
 
 We tend to enjoy some popcorn while reviewing your app, reading the code as if it was a fantasy book filled with dragons and unicorns. Please make it shine.
 
-Feel free to use any external libraries, or keep it vanilla, it's up to you. 
+Also, feel free to use any external libraries you are comfortable with, or keep it vanilla, it's up to you.
 
-The API documentation for the backend that will store your delicious recipes can be found [here](https://github.com/hyperoslo/iOS-playbook/blob/master/RECIPES_API.md).
+The API documentation for the backend that will store your delicious recipes can be found [here](https://github.com/hyperoslo/hyper-recipes/blob/master/README.md).
 
 When you are ready to ship, [send us](mailto:android@hyper.no) the link to your Hyper Recipes repository, and please remember to write concise and understandable commits.
 
-Thanks, we hope you'll enjoy making some recipes!
+Thanks, we hope you'll enjoy making your app!
