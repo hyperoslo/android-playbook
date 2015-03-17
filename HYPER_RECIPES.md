@@ -30,5 +30,3 @@ you.
 The API documentation for the backend that will store your delicious recipes can be found [here](https://github.com/hyperoslo/hyper-recipes/blob/master/README.md).
 
 Thanks, we hope you'll enjoy making your app!
-
-In Hyper Recipes, you'll build an application that will present a collection of recipes fetched 
