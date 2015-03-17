@@ -1,7 +1,7 @@
 Hi,
 
 Thanks for your interest in working at Hyper. We are a bunch of passionate developers that enjoy
-making cool apps and having fun (not necessarily in that order). You'll love it here :)
+making cool apps and having fun (not necessarily in that order). You'll love it here. :)
 
 Even though you could try and convince us to hire you for your good humor, charm, or cool name, we
 really care about majestic code. If you have any cool projects in GitHub that you can show us,
