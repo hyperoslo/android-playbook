@@ -20,7 +20,7 @@ which you will fill with marvellous code. In our daily work, we work by submitti
 all our features, updates, refactorings and bugfixes, and that's how we would like you to work,
 too. So start out by cloning the repo, create a new branch and start submitting your pull requests!
 Remember to keep the commits as small and specific as possible. When you have a feature done (or you
-want our comment on something), push it to github and create a pull request, so we can review and
+want our comment on something), push it to GitHub and create a pull request, so we can review and
 comment on it. We tend to enjoy some popcorn while reviewing your app, reading the code as if it
 was a fantasy book filled with dragons and unicorns. Please make it shine.
 
