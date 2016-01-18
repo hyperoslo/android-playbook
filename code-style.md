@@ -91,7 +91,7 @@ try {
 
 ```
 
-Please notice that we recommend to continue writing next block of the statement on the same line as closing bracket of previous block. An Example:
+Please notice that we recommend to continue writing next block of the statement on the same line as closing bracket of the previous block. An Example:
 
 ```java
 if (isNew) {
