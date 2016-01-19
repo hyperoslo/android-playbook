@@ -47,3 +47,78 @@ this kind of indentation, to separate it from regular indentation. An example:
 chat.sendMessage("Duke Nukem", "Bubble Gum",
         "I'm here to kick ass and chew bubble gum. And I'm all outta gum!");
 ```
+
+# Brackets
+
+If you decide to use if statement, while loop etc in one line we recommend not to use brackets in this case at all. An example:
+
+```java
+if (isRefreshed) invalidate();
+```
+
+For any other case we recommend to use brackets. Examples:
+
+```java
+if (isNew) {
+    d// ...
+} else {
+    // ...
+}
+
+if (isNew) {
+    // ...
+} else if(isOld) {
+    // ...
+}
+
+while (true) {
+    // ...
+}
+
+```
+
+or
+
+
+```java
+try {
+    // ...
+} catch {
+    // ...
+} finally {
+    // ...
+}
+
+```
+
+Please notice that we recommend to continue writing next block of the statement on the same line as closing bracket of the previous block. An Example:
+
+```java
+if (isNew) {
+    // ...
+} else {
+    // ...
+}
+```
+
+not
+
+```java
+if (isNew) {
+    // ...
+} 
+else {
+    // ...
+}
+
+if (isNew) {
+    // ...
+} 
+else 
+{
+    // ...
+}
+```
+
+
+
