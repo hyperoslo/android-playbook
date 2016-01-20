@@ -16,7 +16,7 @@ class Person(val firstName: String, val lastName: String, var age: Int) {
 ```
 ## Companion object
 
-It should be place at the beginning of its parent class :
+It should be place at the beginning of its wrapper class :
 
 ```kotlin
 class Person(val firstName: String, val lastName: String, var age: Int) {
