@@ -1,22 +1,26 @@
-#Kotlin play book
+# Kotlin play book
 
-The general coding conventions : https://kotlinlang.org/docs/reference/coding-conventions.html
+Our conventions for writing Kotlin code is based on the coding conventions from
+the [Kotlin documentation].
 
-#Classes and Inheritance
+[kotlin documentation]: https://kotlinlang.org/docs/reference/coding-conventions.html
 
-##Constructors
+# Classes and Inheritance
+
+## Constructors
 
 As often as possible we should specify if the constructor properties are mutable
-(var) or read-only (val) :
+(`var`) or read-only (`val`):
 
 ```kotlin
 class Person(val firstName: String, val lastName: String, var age: Int) {
     // ...
 }
 ```
+
 ## Companion object
 
-It should be place at the beginning of its wrapper class :
+It should be placed at the beginning of its wrapper class:
 
 ```kotlin
 class Person(val firstName: String, val lastName: String, var age: Int) {
@@ -36,48 +40,49 @@ class Person(val firstName: String, val lastName: String, var age: Int) {
 }
 ```
 
-#Extensions
+# Extensions
 
-I suggest we create one extension file for each Type we need :
+When adding extensions to external classes, make separate files for each type
+and name them _<Type>Extensions.kt_:
 
 ```
-- StringExtension.kt
-- BitmapExtension.kt
-- ContextExtension.kt
-...
+- StringExtensions.kt
+- BitmapExtensions.kt
+- ContextExtensions.kt
+- ...
 ```
 
-#Object Expressions and Declarations
+# Object Expressions and Declarations
 
-##Object expressions
+## Object expressions
 
-To avoid too long method, we should externalize object expressions as properties
-:
+To avoid writing methods that are too long, externalize object expressions as
+properties:
 
 ```kotlin
-class Person(val firstName: String, val lastName: String, var age: Int) {
+class Person {
 
     private val anAttribute = object : MyJavaInterface() {
-        //...
+        // ...
     }
 
-    public fun aMethod () {
-        button.setOnSomeClick( anAttribute )
+    fun aMethod() {
+        button.setOnSomeClick(anAttribute)
     }
 
 }
 ```
 
-#Delegated Properties
+# Delegated Properties
 
-##Standard Delegates
+## Standard Delegates
 
-We should use the standard delegates `lazy`as often as possible in order to have
-lazy loading properties :
+We should use the standard delegates `lazy` as often as possible in order to
+have lazy loading properties:
 
 ```kotlin
 val myValue : String by lazy {
-    someInit() //executed only at the first access
-    callToAFunctionReturningAStringValue()
+    someInit()
+    functionReturningAStringValue()
 }
 ```
