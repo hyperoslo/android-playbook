@@ -7,17 +7,6 @@ the [Kotlin documentation].
 
 # Classes and Inheritance
 
-## Constructors
-
-As often as possible we should specify if the constructor properties are mutable
-(`var`) or read-only (`val`):
-
-```kotlin
-class Person(val firstName: String, val lastName: String, var age: Int) {
-    // ...
-}
-```
-
 ## Companion object
 
 It should be placed at the beginning of its wrapper class:
@@ -40,49 +29,43 @@ class Person(val firstName: String, val lastName: String, var age: Int) {
 }
 ```
 
+## Constructors
+
+As often as possible we should specify if the constructor properties are mutable
+(`var`) or read-only (`val`):
+
+```kotlin
+class Person(val firstName: String, val lastName: String, var age: Int) {
+    // ...
+}
+```
+
+## Methods
+
+If your method has an empty body, use the `Unit` type instead of empty bracket body : 
+
+```kotlin
+fun anEmptyFunction() = Unit
+```
+
+if you are implementing an interface, and only one method is relevant for you, place all the empty one first :
+```kotlin
+object : someInterface {
+  fun methodOne() = Unit
+  fun methodThree() = Unit
+  fun methodTwo() {
+    //your code here
+  }
+}
+```
+
 # Extensions
 
-When adding extensions to external classes, make separate files for each type
-and name them _<Type>Extensions.kt_:
+When adding extensions to external classes, create a extension package and make separate files for each type:
 
 ```
-- StringExtensions.kt
-- BitmapExtensions.kt
-- ContextExtensions.kt
-- ...
-```
-
-# Object Expressions and Declarations
-
-## Object expressions
-
-To avoid writing methods that are too long, externalize object expressions as
-properties:
-
-```kotlin
-class Person {
-
-    private val anAttribute = object : MyJavaInterface() {
-        // ...
-    }
-
-    fun aMethod() {
-        button.setOnSomeClick(anAttribute)
-    }
-
-}
-```
-
-# Delegated Properties
-
-## Standard Delegates
-
-We should use the standard delegates `lazy` as often as possible in order to
-have lazy loading properties:
-
-```kotlin
-val myValue : String by lazy {
-    someInit()
-    functionReturningAStringValue()
-}
+- extensions
+  - String.kt
+  - Bitmap.kt
+  - ...
 ```
