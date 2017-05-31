@@ -65,7 +65,7 @@ When adding extensions to external classes, create a extension package and make 
 
 ```
 - extensions
-  - String.kt
-  - Bitmap.kt
+  - StringExtensions.kt
+  - BitmapExtensions.kt
   - ...
 ```
