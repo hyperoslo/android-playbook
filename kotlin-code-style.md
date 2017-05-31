@@ -31,12 +31,31 @@ class Person(val firstName: String, val lastName: String, var age: Int) {
 
 ## Constructors
 
-As often as possible we should specify if the constructor properties are mutable
-(`var`) or read-only (`val`):
+Initialize class properties as primary constructor parameters instead of in an `init` block.
+
+**DO:**
 
 ```kotlin
 class Person(val firstName: String, val lastName: String, var age: Int) {
     // ...
+}
+```
+
+**DON'T:**
+
+```kotlin
+class Person(firstName: String, lastName: String, age: Int) {
+  val firstName: String
+  val lastName: String
+  var age: Int
+
+  init {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.age = age
+  }
+
+  // ...
 }
 ```
 
