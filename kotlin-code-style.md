@@ -78,6 +78,28 @@ object : someInterface {
 }
 ```
 
+# Data classes
+
+Primary constructors in data classes should be written with a single property on each line, and not begin on the line of the class definition:
+
+**DO:**
+
+```kotlin
+data class Person(
+    val firstName: String,
+    val lastName: String,
+    var age: Int
+)
+```
+
+**DON'T:**
+
+```kotlin
+data class Person(val firstName: String,
+                  val lastName: String,
+                  var age: Int)
+```
+
 # Extensions
 
 When adding extensions to external classes, create a extension package and make separate files for each type:
